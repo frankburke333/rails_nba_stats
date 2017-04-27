@@ -11,12 +11,14 @@
 
 .logo {
   text-align: center;
+  height: 10em;
+  width: 10em;
 }
 
 .elite_team_info {
-font-weight: bold;
-font-size: 20px;
-text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
 .stat_cat {
@@ -25,6 +27,9 @@ text-align: center;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
+  font-family: Ramaraja;
+  font-size: 33px;
+
 }
 
 .elite_description {
