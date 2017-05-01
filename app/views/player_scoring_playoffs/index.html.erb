@@ -1,0 +1,28 @@
+
+<h1 class="title">ELITE DEFENSE</h1>
+
+<h2 class="elite_description">Teams in TOP 10 in Opposition FG%, 3pt%, Turnovers and Margin of Victory</h2>
+
+
+<% @players.each do |player| %>
+
+  <%       if player[:minutes] > 25 && player[:pct_uast_3pm] > 0.50 && player[:pct_uast_2pm] > 0.70 %>
+
+  <div class="elite_player_info">
+    <img class="logo" src="https://ru.global.nba.com/media/img/players/head/230x185/<%= player[:id] %>.png"</img>
+
+    <ul> <%= player[:name] %> </ul>
+    <li class="player_stats"> Minutes: <%= player[:minutes] %> </li>
+    <li class="player_stats"> Percentage of Made 3's Unassisted: <%=player[:pct_uast_3pm] %> Rank: <%= player[:pct_uast_3pm_rank] %> </li>
+    <li class="player_stats"> Percentage of Made 2's that were Unassisted: <%=player[:pct_uast_2pm] %> Rank: <%= player[:pct_uast_2pm_rank] %> </li>
+    <li class="player_stats"> Games Played: <%=player[:games_played] %> </li>
+
+<br>
+
+  </div>
+  <br>
+  <br>
+
+  <% end %>
+
+<% end %>

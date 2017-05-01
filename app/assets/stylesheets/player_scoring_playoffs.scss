@@ -1,0 +1,26 @@
+// Place all the styles related to the player_scoring_playoffs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+.elite_player_info {
+  width: 30em;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  border: solid black 1px;
+}
+
+.player_stat {
+  display: inline-block;;
+  text-align: left;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: Ramaraja;
+  font-size: 33px;
+
+}

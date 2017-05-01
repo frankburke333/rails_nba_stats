@@ -1,5 +1,5 @@
 
-<h1 class="elite">ELITE DEFENSE</h1>
+<h1 class="title">ELITE DEFENSE</h1>
 
 <h2 class="elite_description">Teams in TOP 10 in Opposition FG%, 3pt%, Turnovers and Margin of Victory</h2>
 
@@ -16,8 +16,10 @@
 <br>
     <p class="stat_cat">Opposition FG%: <%= team[:opp_fg_percentage] %> <br>  Rank: <%= team[:opp_fg_pct_rank] %></p>
     <p class="stat_cat">Opposition 3pt%: <%= team[:opp_three_pt_percentage] %> <br>  Rank: <%= team[:opp_three_pt_percentage_rank] %></p>
-    <p class="stat_cat">Opposition Turnover <%= team[:opp_tov] %> <br>  Rank: <%= team[:opp_tov_rank] %></p>
+    <p class="stat_cat">Opposition Turnovers: <%= team[:opp_tov] %> <br>  Rank: <%= team[:opp_tov_rank] %></p>
     <p class="stat_cat">Margin of Victory: <%= team[:plus_minus] %> <br>  Rank: <%= team[:plus_minus_rank]%></p>
+    <p class="stat_cat">Wins: <%= team[:wins] %> <br>
+
   </section>
   <br>
   <br>
