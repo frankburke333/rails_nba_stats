@@ -3,24 +3,51 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
-
-.elite_player_info {
-  width: 30em;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: left;
-  display: inline-block;
-  border: solid black 1px;
+.dribble_pic {
+  height: 1em;
 }
 
-.player_stat {
-  display: inline-block;;
-  text-align: left;
-  padding: 5px;
-  border-radius: 10px;
-  font-family: Ramaraja;
-  font-size: 33px;
+.main_header {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  background-color: #224188;
+  font-size: 5em;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  padding: 20px;
+
+}
+
+.stats {
+  float: right;
+  background-color: #48494c;
+}
+
+.header {
+  background-color: #224188;
+  font-size: 19px;
+  font-weight: bold;
+  color: white
+}
+
+.player_stats {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.img-rounded {
+  width: 12em;
+  height: 12em;
+  float: left;
+  background-color: white;
+  padding: 1px;
+  border: solid black 5px;
+}
+
+.col-md-4 {
+  border: solid white 1px;
+  background-color: #48494c;
+  padding: 6px;
 
 }
