@@ -7,42 +7,57 @@
   height: 1em;
 }
 
+
+.knuckles {
+  font-family: 'Righteous', cursive;
+}
+
 .main_header {
+  position: absolute;
+  z-index: 100px;
   font-family: 'Righteous', cursive;
   text-align: center;
-  background-color: #224188;
-  font-size: 5em;
+  font-size: 11em;
   color: white;
   -webkit-text-stroke: 1px black;
   padding: 20px;
+  margin-top: -3em;
+  width: 100%;
+  font-weight: bold;
 
 }
 
+
 .stats {
-  float: right;
+  float: left;
   background-color: #48494c;
 }
 
 .header {
   background-color: #224188;
-  font-size: 19px;
+  font-size: 2em;
   font-weight: bold;
   color: white
 }
 
 .player_stats {
-  font-size: 15px;
+  font-size: 1.6em;
   font-weight: bold;
   color: white;
 }
 
 .img-rounded {
-  width: 12em;
-  height: 12em;
+  width: 15em;
+  height: 15em;
   float: left;
   background-color: white;
   padding: 1px;
   border: solid black 5px;
+}
+
+.container {
+  margin-top: -10em;
+
 }
 
 .col-md-4 {
@@ -50,4 +65,8 @@
   background-color: #48494c;
   padding: 6px;
 
+}
+
+#search_new_video {
+  margin-bottom: -8em;
 }

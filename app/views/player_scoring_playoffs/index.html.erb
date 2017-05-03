@@ -1,22 +1,29 @@
-<h1 class="main_header"><img class="dribble_pic" src="http://media-spacejam.cursecdn.com/avatars/thumbnails/4/357/384/384/p6_240_8929.png" alt="">Scoring: Off the dribble <img class="dribble_pic" src="http://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/clippers/playoffslider/chris-paul-stats-full.png" alt=""></h1>
+<div id="search_new_video">
+  <video id="steph" width=100%  autoplay loop muted>
+    <source src="steph.mov" type="video/mp4">
+  </video>
+</div>
+
+<h1 class="main_header">Off the dribble </h1>
 
 
 <% @players.each do |player| %>
 
-  <%       if player[:minutes] > 25 && player[:pct_uast_3pm] > 0.50 && player[:pct_uast_2pm] > 0.70 %>
-<div class="col-md-4">
+  <% if player[:minutes] > 25 && player[:pct_uast_3pm] > 0.50 && player[:pct_uast_2pm] > 0.70 %>
 
-    <img class="img-rounded" src="https://ru.global.nba.com/media/img/players/head/230x185/<%= player[:id] %>.png"</img>
-    <div class="stats">
-      <p class="header"> <%= player[:name] %></p>
-      <p class="player_stats"> Minutes: <%= player[:minutes] %> </p>
-      <p class="player_stats"> % of Made 3's Unast: <%=player[:pct_uast_3pm] %> Rank: <%= player[:pct_uast_3pm_rank] %> </p>
-      <p class="player_stats"> % of Made 2's Unast: <%=player[:pct_uast_2pm] %> Rank: <%= player[:pct_uast_2pm_rank] %> </p>
-      <p class="player_stats"> Games Played: <%=player[:games_played] %> </p>
-    </div>
+  <div class="col-md-4">
+
+      <img class="img-rounded" src="https://ru.global.nba.com/media/img/players/head/230x185/<%= player[:id] %>.png"</img>
+      <div class="stats">
+        <p class="header"> <%= player[:name] %></p>
+        <p class="player_stats"> Minutes: <%= player[:minutes] %> </p>
+        <p class="player_stats"> % of Made 3's Unast: <%=player[:pct_uast_3pm] %> Rank: <%= player[:pct_uast_3pm_rank] %> </p>
+        <p class="player_stats"> % of Made 2's Unast: <%=player[:pct_uast_2pm] %> Rank: <%= player[:pct_uast_2pm_rank] %> </p>
+        <p class="player_stats"> Games Played: <%=player[:games_played] %> </p>
+      </div>
 
 
-</div>
+  </div>
 
 
 

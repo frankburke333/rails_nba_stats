@@ -1,7 +1,6 @@
 
-<h1 class="title">ELITE DEFENSE</h1>
+<h1 class="main_header"><img class="dribble_pic" src="http://media-spacejam.cursecdn.com/avatars/thumbnails/4/357/384/384/p6_240_8929.png" alt="">Elite Team Defense <img class="dribble_pic" src="http://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/clippers/playoffslider/chris-paul-stats-full.png" alt=""></h1>
 
-<h2 class="elite_description">Teams in TOP 10 in Opposition FG%, 3pt%, Turnovers and Margin of Victory</h2>
 
 
 <% @teams.each do |team| %>
@@ -9,20 +8,25 @@
   <% if team[:opp_tov_rank] < 10 && team[:opp_three_pt_percentage_rank] < 10 && team[:opp_fg_pct_rank] < 10  %>
     <br>
 
-  <section class="elite_team_info">
-    <img class="logo" src="http://www.myvideo.net.tw/TWM_Video/Portal/images/teamLogo/nba/bluebase%20166/<%= team[:id] %>.png"</img>
+<div class="col-md-4">
+
+  <img class="img-rounded" src="http://www.myvideo.net.tw/TWM_Video/Portal/images/teamLogo/nba/bluebase%20166/<%= team[:id] %>.png"</img>
 
 
-<br>
-    <p class="stat_cat">Opposition FG%: <%= team[:opp_fg_percentage] %> <br>  Rank: <%= team[:opp_fg_pct_rank] %></p>
-    <p class="stat_cat">Opposition 3pt%: <%= team[:opp_three_pt_percentage] %> <br>  Rank: <%= team[:opp_three_pt_percentage_rank] %></p>
-    <p class="stat_cat">Opposition Turnovers: <%= team[:opp_tov] %> <br>  Rank: <%= team[:opp_tov_rank] %></p>
-    <p class="stat_cat">Margin of Victory: <%= team[:plus_minus] %> <br>  Rank: <%= team[:plus_minus_rank]%></p>
-    <p class="stat_cat">Wins: <%= team[:wins] %> <br>
+  <div class="stats">
+    <p class="header"><%= team[:name] %></p>
+    <p class="player_stats">Opposition FG%: <%= team[:opp_fg_percentage] %>  Rank: <%= team[:opp_fg_pct_rank] %></p>
+    <p class="player_stats">Opposition 3pt%: <%= team[:opp_three_pt_percentage] %> Rank: <%= team[:opp_three_pt_percentage_rank] %></p>
+    <p class="player_stats">Opposition Turnovers: <%= team[:opp_tov] %> Rank: <%= team[:opp_tov_rank] %></p>
+    <p class="player_stats">Margin of Victory: <%= team[:plus_minus] %> Rank: <%= team[:plus_minus_rank]%></p>
+    <p class="player_stats">Wins: <%= team[:wins] %>
 
-  </section>
-  <br>
-  <br>
+  </div>
+
+</div>
+
+
+
 
   <% end %>
 

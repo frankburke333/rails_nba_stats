@@ -2,35 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.elite {
-  text-align: center;
-  font-family: helvetica;
-  font-size: 39px;
+.dribble_pic {
+  height: 1em;
 }
 
 
-.logo {
-  text-align: center;
-  height: 10em;
-  width: 10em;
+
+.team_stats {
+  float: left;
+  background-color: #48494c;
 }
 
-.elite_team_info {
+.header {
+  background-color: #224188;
+  font-size: 2em;
   font-weight: bold;
-  font-size: 20px;
-  text-align: center;
+  color: white
 }
 
-.stat_cat {
-  display: inline-block;;
-  text-align: left;
-  padding: 5px;
-  border-radius: 10px;
-  font-family: Ramaraja;
-  font-size: 33px;
-
+.player_stats {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
 }
 
-.elite_description {
-  text-align: center;
+.img-rounded {
+  width: 15em;
+  height: 15em;
+  float: left;
+  background-color: white;
+  padding: 1px;
+  border: solid black 5px;
+}
+
+.col-md-4 {
+  border: solid white 1px;
+  background-color: #48494c;
+  padding: 6px;
+
 }
