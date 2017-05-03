@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+html {
+  background-color: #48494c;
+
+}
+
 .dribble_pic {
   height: 1em;
 }
@@ -10,6 +15,10 @@
 
 .knuckles {
   font-family: 'Righteous', cursive;
+  padding: 0.5em;
+  background-color: darkorange;
+  color: #13218a;
+  margin-top: -0.2em;
 }
 
 .main_header {
@@ -19,36 +28,38 @@
   text-align: center;
   font-size: 11em;
   color: white;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px red;
   padding: 20px;
-  margin-top: -3em;
+  margin-top: -2em;
   width: 100%;
   font-weight: bold;
+  opacity: 0.8;
+
 
 }
 
 
 .stats {
-  float: left;
+  float: right;
   background-color: #48494c;
 }
 
 .header {
   background-color: #224188;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: bold;
   color: white
 }
 
 .player_stats {
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: bold;
   color: white;
 }
 
 .img-rounded {
-  width: 15em;
-  height: 15em;
+  width: 11em;
+  height: 12em;
   float: left;
   background-color: white;
   padding: 1px;
@@ -68,5 +79,6 @@
 }
 
 #search_new_video {
-  margin-bottom: -8em;
+  margin-bottom: -15em;
+    margin-top: -1em;
 }
